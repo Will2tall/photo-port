@@ -10,6 +10,8 @@ const categories = [
 ]
 const mockCurrentCategory = jest.fn();
 const mockSetCurrentCategory = jest.fn();
+const mockContactSelected = jest.fn();
+const mockSetcontactSelected = jest.fn();
 
 describe('Nav component', () => {
     it('renders', () => {
@@ -17,6 +19,8 @@ describe('Nav component', () => {
             categories={categories}
             setCurrentCategory={mockSetCurrentCategory}
             currentCategory={mockCurrentCategory}
+            contactSelected={mockContactSelected}
+            mockSetcontactSelected={mockSetcontactSelected}
         />);
     })
 
