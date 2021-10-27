@@ -20,7 +20,7 @@ describe('Gallery is rendering', () => {
 
   it('render', () => {
       const { getByTestId } = render(<Gallery currentCategory={portrait} />)
-      expect(getByTestId('hitag')).toHaveTextContent('Portraits')
+      expect(getByTestId('h1tag')).toHaveTextContent('Portraits')
   })
 })
 
