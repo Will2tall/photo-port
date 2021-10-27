@@ -6,7 +6,7 @@ import ContactForm from './components/Contact';
 import './App.css';
 
 function App() {
-  const [contactSelected, setContactSelected] = useState(false);
+  
   const [categories] = useState([
     {
         name: "commercial",
@@ -21,6 +21,7 @@ function App() {
     },
 ]);
 
+const [contactSelected, setContactSelected] = useState(false);
 const [currentCategory, setCurrentCategory] = useState(categories[0]);
 
 return (
